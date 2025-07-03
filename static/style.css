@@ -1,0 +1,39 @@
+body {
+    background: 
+        linear-gradient(rgba(240, 244, 248, 0.271), rgba(240,244,248,0.271)),
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+}
+.container {
+    max-width: 800px;
+    margin-top: 60px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.drop-zone {
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    color: #888;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.drop-zone.dragover {
+    background: #e9f5ff;
+}
+.image-preview {
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 10px;
+}
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIFAR-10 Classifier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container text-center">
+        <h2 class="mb-3 text-primary">CIFAR-10 Image Classifier</h2>
+        <p class="text-muted">Upload images of the following 10 classes: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck</p>
+
+        <form method="post" enctype="multipart/form-data" id="upload-form">
+            <div class="drop-zone mb-3" id="drop-zone">
+                <p>Drag and drop images here, or click to select (multiple allowed)</p>
+                <input type="file" name="images" id="file-input" accept="image/*" multiple hidden>
+            </div>
+
+            <div class="mb-3">
+                <div class="progress" style="height: 25px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" id="upload-progress" style="width: 0%">0%</div>
+                </div>
+            </div>
+
+            <div class="preview-container mb-4" id="preview-container"></div>
+
+            <button type="submit" class="btn btn-primary btn-lg">Predict</button>
+        </form>
+
+        {% if predictions %}
+            <div class="mt-5">
+                <h5>Predictions:</h5>
+                <div class="preview-container mt-3">
+                    {% for pred in predictions %}
+                        <div>
+                            <img src="data:image/png;base64,{{ pred.image }}" class="image-preview">
+                            <p class="mt-1">{{ pred.label }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
