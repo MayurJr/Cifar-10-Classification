@@ -68,9 +68,16 @@ Training: Done using TensorFlow 2.18
 
 You can find the saved model in the model/ directory. It is loaded automatically when the app starts.
 
+---
+
 ### 📸 How to Use
 1. Launch the app with python app.py
 2. Open your browser to http://localhost:5000
 3. Drag and drop one or more images (32x32 or auto-resized)
 4. Click Predict
 5. View predicted labels below each image 🎯
+
+---
+
+### Author
+[MayurJr](https://github.com/MayurJr)
