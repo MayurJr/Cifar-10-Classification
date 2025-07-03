@@ -79,5 +79,10 @@ You can find the saved model in the model/ directory. It is loaded automatically
 
 ---
 
+### Screenshots
+[1.](https://github.com/MayurJr/Cifar-10-Classification/blob/ef5a3f56ef848a108c3415c91866eda416d3f3ff/Screenshot%202025-07-03%20182346.png)
+
+[2.](https://github.com/MayurJr/Cifar-10-Classification/blob/ef5a3f56ef848a108c3415c91866eda416d3f3ff/Screenshot%202025-07-03%20182356.png)
+
 ### Author
 [MayurJr](https://github.com/MayurJr)
