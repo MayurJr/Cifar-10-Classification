@@ -29,5 +29,5 @@ A simple web application built with **Flask** that uses a trained **TensorFlow**
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/cifar10-flask-app.git
-cd cifar10-flask-app
+git clone https://github.com/MayurJr/Cifar-10-Classification.git
+cd Cifar-10-Classification
