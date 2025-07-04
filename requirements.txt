@@ -1,5 +1,5 @@
 Flask==2.3.3
-tensorflow==2.18.0
+tensorflow-cpu==2.18.0
 numpy==1.26.4
 Pillow==10.3.0
 matplotlib==3.7.2
