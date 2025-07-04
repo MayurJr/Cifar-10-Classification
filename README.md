@@ -1,4 +1,5 @@
 # 🧠 CIFAR-10 Image Classifier Web App
+[Live Demo ->](https://cifar-10-classification.onrender.com)
 
 A simple yet powerful web application built with **Flask** that uses a trained **TensorFlow** model to classify uploaded images into one of the 10 CIFAR-10 categories:
 
